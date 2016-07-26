@@ -1,0 +1,161 @@
+// individual elements that can be used in a video script
+// key - name of the elements
+// value - a json object with the configuration of this element.
+var scriptElemOptions ={
+   "video_full": {
+      "id": "video1",
+      "play": ".end",
+      "alpha": 1,
+      "zIndex": 1,
+      "loop": true
+   },
+   "image":{
+      "id": "img_X",
+      "play": ".end",
+      "duration": 10000,
+      "zIndex": 2,
+      "alpha": 0,
+      "imageAspect": "crop",
+      "size": {
+       "w": 1,
+       "h": 1
+      },
+      "events": [
+       {
+          "start": {
+            "imageFadeIn": 0
+          }
+       },
+       {
+          "end - 0": {
+            "imageFadeOut": 0
+          }
+       }
+      ],
+      "loop": false
+   },
+   "qoute_with_image-text_Quote_Azul":{
+      "id": "text_Quote_Azul",
+      "play": ".end+1500",
+      "duration": 4000,
+      "zIndex": 7,
+      "events": [
+       {
+          "start": {
+            "imageFadeIn": 500
+          }
+       },
+       {
+          "start": {
+            "moveTo": {
+              "duration": 200,
+              "x": 0.26,
+              "y": 0.3521
+            }
+          }
+       },
+       {
+          "end-600": {
+            "imageFadeOut": 600
+          }
+       }
+      ],
+      "position": {
+       "x": 0.26,
+       "y": 0.4678
+      },
+      "size": {
+       "h": 0.3,
+       "w": 0.478
+      },
+      "color": "0xFFFFFF",
+      "textAlignV": "center",
+      "textFont": "MajeritHeadlineCondensedBold",
+      "textLines": 3,
+      "textPaging": true
+   },
+   "title_with_video-video": {
+     "id": "video1",
+     "play": ".end-1000",
+     "zIndex": 2,
+     "alpha": 0,
+     "imageAspect": "crop",
+     "position": {
+      "x": 0,
+      "y": 1
+     },
+     "events": [
+      {
+         "start": {
+           "imageFadeIn": 500
+         }
+      },
+      {
+         "start": {
+           "moveTo": {
+             "duration": 1000,
+             "x": 0,
+             "y": 0
+           }
+         }
+      },
+      {
+         "end-1000": {
+           "moveTo": {
+             "duration": 1000,
+             "x": 0,
+             "y": -1
+           }
+         }
+      },
+      {
+         "end-600": {
+           "imageFadeOut": 600
+         }
+      }
+     ],
+     "imageAlignH": "center",
+     "imageAlignV": "center",
+     "loop": false
+  },
+   "text_Titular_1": {
+     "id": "titular1",
+     "play": ".end+700",
+     "duration": ".duration-1700",
+     "zIndex": 2,
+     "events": [
+      {
+         "start": {
+           "imageFadeIn": 1000
+         }
+      },
+      {
+         "start": {
+           "moveTo": {
+             "duration": 600,
+             "x": 0.1000000014901161,
+             "y": 0.3521
+           }
+         }
+      },
+      {
+         "end-300": {
+           "imageFadeOut": 0
+         }
+      }
+     ],
+     "position": {
+      "x": 0.1000000014901161,
+      "y": 0.4678
+     },
+     "size": {
+      "h": 0.3,
+      "w": 0.81
+     },
+     "color": "0xFFFFFF",
+     "textAlignV": "center",
+     "textFont": "MajeritHeadlineCondensedBold",
+     "textLines": 3,
+     "textPaging": true
+  }
+};

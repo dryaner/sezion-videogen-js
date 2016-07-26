@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="sezion" />
+
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link href="vendor/bootstrap-fileinput/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <title>Demo Video Generator</title>
+
+    <script src="vendor/javascript/jquery.min.js" defer></script>
+    <script src="vendor/javascript/jquery.validate.min.js" defer></script>
+    <script src="vendor/javascript/additional-methods.min.js" defer></script>
+    <script src="vendor/bootstrap-fileinput/js/plugins/canvas-to-blob.min.js" type="text/javascript" defer></script>
+    <script src="vendor/bootstrap-fileinput/js/fileinput.min.js" type="text/javascript" defer></script>
+    <script src="vendor/javascript/bootstrap.min.js" defer></script>
+    <script src="vendor/bootstrap-fileinput/js/fileinput_locale_es.js" defer></script>
+    <script src="vendor/javascript/barrister.browser.min.js" defer></script>
+    <script src="vendor/javascript/underscore-min.js" defer></script>
+    <script src="vendor/javascript/SezionTemplateSDK.js" defer></script>
+
+    <script src="config/config.js" defer></script>
+    <script src="config/videoInfo.js"></script>
+    <script src="config/elements.json"></script>
+    
+    
+    <script src="assets/js/timeLine.js" defer></script>
+    <script src="assets/js/videoBlock.js" defer></script>
+    <script src="assets/js/mediaElement.js" defer></script>
+    <script src="assets/js/szn-script.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+
+  </head>
+  <body>
+     <main class="container">
+         <section id="mediaSelection" class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+               <div class="add-media-button btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Create Block
+                    </button>
+               </div>
+               <div class="add-media-button btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Insert Block in Timeline &nbsp<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a id="add-block-qoute_with_image" href="#">Demo: Text + Image</a></li>
+                        <li><a id="add-block-title_with_video" href="#">Demo: Title + Video</a></li>
+                        <li><a id="add-block-imagen" href="#">Demo: Image</a></li>
+                        <li><a id="add-block-video" href="#">Demo: Video</a></li>
+                    </ul>
+               </div>
+               
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+               <label for="metadata">Video Metadata (max 1KB)</label>
+               <input id="metadata" type="text" class="form-control video-metadata" placeholder="metadata">               
+            </div>
+         </section>
+         <section id="timeLine">
+            <button type="button" id="generate-video" class="btn btn-success center-block">Generate Video</button>
+         </section>
+     </main>
+  </body>
+</html>
